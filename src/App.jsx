@@ -13,7 +13,7 @@ export const tabs = [
 export function App() {
   const [selectedId, setSelectedId] = useState(tabs[0].id);
 
-  const handleidSelection = tabId => {
+  const handleIdSelection = tabId => {
     setSelectedId(tabId);
   };
 
@@ -25,7 +25,7 @@ export function App() {
       <Tabs
         tabs={tabs}
         activeTabId={selectedId}
-        onTabSelected={handleidSelection}
+        onTabSelected={handleIdSelection}
       />
     </div>
   );
